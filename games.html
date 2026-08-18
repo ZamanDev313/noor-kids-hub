@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Games — Noor Kids Hub</title>
+<meta name="description" content="Play five joyful Islamic learning games and earn XP and badges." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="games-page">
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🌙</span>
+      <span class="brand-text">Noor <span>Kids Hub</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="learn.html">Learn</a></li>
+      <li><a href="dashboard.html">My Progress</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="xp-chip">
+        <div class="mini-ring mini-moon">
+          <svg viewBox="0 0 44 44">
+            <circle class="track" cx="22" cy="22" r="18"></circle>
+            <circle class="progress" cx="22" cy="22" r="18"></circle>
+          </svg>
+        </div>
+        <span><span data-xp-value>0</span> XP</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h1>🎮 Choose Your Game</h1>
+    <p>Every game earns you XP. Play them all to unlock every badge!</p>
+  </div>
+
+  <!-- HUB -->
+  <section class="tab-panel active" id="panel-hub">
+    <div class="card-grid">
+      <div class="card game-card">
+        <div class="icon-badge icon-green">🧠</div>
+        <h3>Islamic Quiz</h3>
+        <p>10 questions about Salah, the Pillars of Islam, Ramadan, manners, and more.</p>
+        <div class="game-meta"><span>⏱ 5 min</span><span>+10 XP / correct</span></div>
+        <button class="btn btn-primary btn-block" data-play="panel-quiz">Play Now</button>
+      </div>
+      <div class="card game-card">
+        <div class="icon-badge icon-gold">🕌</div>
+        <h3>Arabic Letters Match</h3>
+        <p>Flip the cards and match each Arabic letter with its name.</p>
+        <div class="game-meta"><span>⏱ 4 min</span><span>+15 XP / match</span></div>
+        <button class="btn btn-primary btn-block" data-play="panel-arabic">Play Now</button>
+      </div>
+      <div class="card game-card">
+        <div class="icon-badge icon-sky">🤲</div>
+        <h3>Dua Matcher</h3>
+        <p>Match everyday duas to their meanings — no peeking!</p>
+        <div class="game-meta"><span>⏱ 4 min</span><span>+12 XP / match</span></div>
+        <button class="btn btn-primary btn-block" data-play="panel-dua">Play Now</button>
+      </div>
+      <div class="card game-card">
+        <div class="icon-badge icon-coral">⭐</div>
+        <h3>Salah Step Order</h3>
+        <p>Arrange the steps of Salah in the correct order.</p>
+        <div class="game-meta"><span>⏱ 3 min</span><span>+20 XP</span></div>
+        <button class="btn btn-primary btn-block" data-play="panel-salah">Play Now</button>
+      </div>
+      <div class="card game-card">
+        <div class="icon-badge icon-green">🔤</div>
+        <h3>Word Scramble</h3>
+        <p>Unscramble Islamic vocabulary words, one at a time.</p>
+        <div class="game-meta"><span>⏱ 3 min</span><span>+10 XP / word</span></div>
+        <button class="btn btn-primary btn-block" data-play="panel-scramble">Play Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="tab-panel" id="panel-quiz">
+    <div class="game-shell">
+      <button class="btn btn-ghost btn-sm" data-back-hub style="margin-bottom:18px;">← Back to Games</button>
+      <div id="quiz-body"></div>
+    </div>
+  </section>
+
+  <!-- ARABIC MATCH -->
+  <section class="tab-panel" id="panel-arabic">
+    <div class="game-shell">
+      <button class="btn btn-ghost btn-sm" data-back-hub style="margin-bottom:18px;">← Back to Games</button>
+      <div id="arabic-body"></div>
+    </div>
+  </section>
+
+  <!-- DUA MATCH -->
+  <section class="tab-panel" id="panel-dua">
+    <div class="game-shell">
+      <button class="btn btn-ghost btn-sm" data-back-hub style="margin-bottom:18px;">← Back to Games</button>
+      <div id="dua-body"></div>
+    </div>
+  </section>
+
+  <!-- SALAH ORDER -->
+  <section class="tab-panel" id="panel-salah">
+    <div class="game-shell">
+      <button class="btn btn-ghost btn-sm" data-back-hub style="margin-bottom:18px;">← Back to Games</button>
+      <div id="salah-body"></div>
+    </div>
+  </section>
+
+  <!-- SCRAMBLE -->
+  <section class="tab-panel" id="panel-scramble">
+    <div class="game-shell">
+      <button class="btn btn-ghost btn-sm" data-back-hub style="margin-bottom:18px;">← Back to Games</button>
+      <div id="scramble-body"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>🌙 Noor Kids Hub</h4>
+        <p style="color:#B9C7C0;font-size:.92rem;max-width:34ch;">A happy, safe home for Pakistani Muslim kids to learn Islam and play.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="dashboard.html">My Progress</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="rules.html">Rules &amp; Safety</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> Noor Kids Hub — Made with 💚 for Pakistani Muslim families.</div>
+  </div>
+</footer>
+
+<div class="name-modal-backdrop">
+  <div class="name-modal">
+    <div style="font-size:2.6rem;">🌙</div>
+    <h3>Assalamu Alaikum!</h3>
+    <p>What should we call you on your learning journey?</p>
+    <form>
+      <input type="text" maxlength="20" placeholder="Your name" required />
+      <button type="submit" class="btn btn-primary btn-block">Start My Journey</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/games.js"></script>
+</body>
+</html>

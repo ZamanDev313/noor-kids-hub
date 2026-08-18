@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Progress — Noor Kids Hub</title>
+<meta name="description" content="Track your XP, level, badges, and streak on Noor Kids Hub." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🌙</span>
+      <span class="brand-text">Noor <span>Kids Hub</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="learn.html">Learn</a></li>
+      <li><a href="dashboard.html">My Progress</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="xp-chip">
+        <div class="mini-ring mini-moon">
+          <svg viewBox="0 0 44 44">
+            <circle class="track" cx="22" cy="22" r="18"></circle>
+            <circle class="progress" cx="22" cy="22" r="18"></circle>
+          </svg>
+        </div>
+        <span><span data-xp-value>0</span> XP</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h1>🏅 My Progress</h1>
+    <p>Keep playing and learning, <span data-user-name>Little Star</span> — every bit of effort counts!</p>
+  </div>
+
+  <div class="dash-grid">
+    <div>
+      <div class="dash-card">
+        <div class="moon-ring">
+          <svg viewBox="0 0 180 180">
+            <defs>
+              <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#16A374" />
+                <stop offset="100%" stop-color="#E8A33D" />
+              </linearGradient>
+            </defs>
+            <circle class="track" cx="90" cy="90" r="76"></circle>
+            <circle class="progress" cx="90" cy="90" r="76"></circle>
+          </svg>
+          <div class="moon-ring-center">
+            <div class="moon-emoji">🌙</div>
+            <strong data-level-title>New Crescent</strong>
+            <span>Level <span data-level-num>1</span></span>
+          </div>
+        </div>
+        <p style="text-align:center;font-weight:700;color:var(--navy-soft);margin-top:14px;" data-next-xp></p>
+        <div class="streak-row">
+          <div><strong data-streak-value>0</strong><span>🔥 Day Streak</span></div>
+          <div><strong data-xp-value>0</strong><span>Total XP</span></div>
+          <div><strong data-badge-count>0/12</strong><span>Badges</span></div>
+        </div>
+      </div>
+
+      <div class="dash-card" style="margin-top:20px;">
+        <h3>Best Scores</h3>
+        <div data-score-list></div>
+      </div>
+
+      <div class="dash-card" style="margin-top:20px;">
+        <button class="btn btn-secondary btn-block" data-reset-progress>Reset My Progress</button>
+        <p style="font-size:.8rem;color:var(--navy-soft);text-align:center;margin-top:10px;">This clears XP, badges, and scores stored on this device only.</p>
+      </div>
+    </div>
+
+    <div class="dash-card">
+      <h3>My Badges</h3>
+      <p style="color:var(--navy-soft);margin-top:-8px;">Play games and finish lessons to unlock these!</p>
+      <div class="badge-grid" data-badge-grid></div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>🌙 Noor Kids Hub</h4>
+        <p style="color:#B9C7C0;font-size:.92rem;max-width:34ch;">A happy, safe home for Pakistani Muslim kids to learn Islam and play.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="dashboard.html">My Progress</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="rules.html">Rules &amp; Safety</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> Noor Kids Hub — Made with 💚 for Pakistani Muslim families.</div>
+  </div>
+</footer>
+
+<div class="name-modal-backdrop">
+  <div class="name-modal">
+    <div style="font-size:2.6rem;">🌙</div>
+    <h3>Assalamu Alaikum!</h3>
+    <p>What should we call you on your learning journey?</p>
+    <form>
+      <input type="text" maxlength="20" placeholder="Your name" required />
+      <button type="submit" class="btn btn-primary btn-block">Start My Journey</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

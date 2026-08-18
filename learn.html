@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Learn — Noor Kids Hub</title>
+<meta name="description" content="Kalimas, Pillars of Islam, duas, Salah steps, Prophets' stories, good manners, and Ramadan facts for kids." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🌙</span>
+      <span class="brand-text">Noor <span>Kids Hub</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="learn.html">Learn</a></li>
+      <li><a href="dashboard.html">My Progress</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="xp-chip">
+        <div class="mini-ring mini-moon">
+          <svg viewBox="0 0 44 44">
+            <circle class="track" cx="22" cy="22" r="18"></circle>
+            <circle class="progress" cx="22" cy="22" r="18"></circle>
+          </svg>
+        </div>
+        <span><span data-xp-value>0</span> XP</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h1>📖 Learn With Noor</h1>
+    <p>Simple, true lessons about our deen — written just for kids. Open every tab to earn the Knowledge Seeker badge!</p>
+  </div>
+
+  <div class="tabbar">
+    <button class="tab-btn active" data-tab="panel-kalimas">Kalimas</button>
+    <button class="tab-btn" data-tab="panel-pillars">Pillars of Islam</button>
+    <button class="tab-btn" data-tab="panel-duas">Duas</button>
+    <button class="tab-btn" data-tab="panel-salah">Salah Steps</button>
+    <button class="tab-btn" data-tab="panel-prophets">Prophets</button>
+    <button class="tab-btn" data-tab="panel-manners">Good Manners</button>
+    <button class="tab-btn" data-tab="panel-ramadan">Ramadan</button>
+  </div>
+
+  <!-- KALIMAS -->
+  <section class="tab-panel active" id="panel-kalimas">
+    <div class="lesson-card">
+      <span class="tag">Kalimas</span>
+      <h3>The Kalimas we learn by heart</h3>
+      <p>These are beautiful sentences that remind us of our faith. Try saying them slowly with a parent or teacher.</p>
+    </div>
+    <div id="kalimas-list"></div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="tab-panel" id="panel-pillars">
+    <div class="lesson-card">
+      <span class="tag">Pillars of Islam</span>
+      <h3>The 5 Pillars — like the poles that hold up a tent</h3>
+      <p>Just like a tent needs strong poles to stand, our faith stands on these five pillars.</p>
+    </div>
+    <div id="pillars-list"></div>
+  </section>
+
+  <!-- DUAS -->
+  <section class="tab-panel" id="panel-duas">
+    <div class="lesson-card">
+      <span class="tag">Everyday Duas</span>
+      <h3>Small duas for a big day</h3>
+      <p>We can talk to Allah anytime! Here are duas for everyday moments.</p>
+    </div>
+    <div id="duas-list"></div>
+  </section>
+
+  <!-- SALAH -->
+  <section class="tab-panel" id="panel-salah">
+    <div class="lesson-card">
+      <span class="tag">Salah</span>
+      <h3>The steps of Salah</h3>
+      <p>Salah connects us to Allah five times a day. Here are the general steps — your family or teacher can show you exactly how to pray.</p>
+      <ol id="salah-steps-list" style="padding-left:20px;line-height:2;font-weight:700;color:var(--navy);"></ol>
+    </div>
+    <div class="lesson-card">
+      <h3>The 5 daily prayers</h3>
+      <div class="pill-row">
+        <span class="pill">Fajr — before sunrise</span>
+        <span class="pill">Zuhr — midday</span>
+        <span class="pill">Asr — afternoon</span>
+        <span class="pill">Maghrib — sunset</span>
+        <span class="pill">Isha — night</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPHETS -->
+  <section class="tab-panel" id="panel-prophets">
+    <div class="lesson-card">
+      <span class="tag">Prophets</span>
+      <h3>Stories of the Prophets (peace be upon them)</h3>
+      <p>Allah sent many prophets to guide people. We don't draw or show pictures of them, but we can learn from their beautiful examples.</p>
+    </div>
+    <div id="prophets-list"></div>
+  </section>
+
+  <!-- MANNERS -->
+  <section class="tab-panel" id="panel-manners">
+    <div class="lesson-card">
+      <span class="tag">Akhlaq</span>
+      <h3>Good manners make a good Muslim</h3>
+      <p>The Prophet Muhammad ﷺ said the best among us are those with the best manners. Here's how we can shine every day:</p>
+    </div>
+    <ul class="rules-list" id="manners-list"></ul>
+  </section>
+
+  <!-- RAMADAN -->
+  <section class="tab-panel" id="panel-ramadan">
+    <div class="lesson-card">
+      <span class="tag">Ramadan</span>
+      <h3>The blessed month</h3>
+      <p>Ramadan is a special and joyful month full of prayer, kindness, and togetherness.</p>
+    </div>
+    <ul class="rules-list" id="ramadan-list"></ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>🌙 Noor Kids Hub</h4>
+        <p style="color:#B9C7C0;font-size:.92rem;max-width:34ch;">A happy, safe home for Pakistani Muslim kids to learn Islam and play.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="dashboard.html">My Progress</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="rules.html">Rules &amp; Safety</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> Noor Kids Hub — Made with 💚 for Pakistani Muslim families.</div>
+  </div>
+</footer>
+
+<div class="name-modal-backdrop">
+  <div class="name-modal">
+    <div style="font-size:2.6rem;">🌙</div>
+    <h3>Assalamu Alaikum!</h3>
+    <p>What should we call you on your learning journey?</p>
+    <form>
+      <input type="text" maxlength="20" placeholder="Your name" required />
+      <button type="submit" class="btn btn-primary btn-block">Start My Journey</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("kalimas-list").innerHTML = KALIMAS.map(k => `
+      <div class="lesson-card">
+        <h3>${k.name}</h3>
+        <div class="arabic-text">${k.translit}</div>
+        <div class="meaning">${k.meaning}</div>
+      </div>`).join("");
+
+    document.getElementById("pillars-list").innerHTML = PILLARS.map((p,i) => `
+      <div class="lesson-card">
+        <span class="tag">Pillar ${i+1}</span>
+        <h3>${p.name}</h3>
+        <div class="meaning">${p.meaning}</div>
+      </div>`).join("");
+
+    document.getElementById("duas-list").innerHTML = DUAS.map(d => `
+      <div class="lesson-card">
+        <h3>${d.name}</h3>
+        <div class="arabic-text">${d.translit}</div>
+        <div class="meaning">${d.meaning}</div>
+      </div>`).join("");
+
+    document.getElementById("salah-steps-list").innerHTML = SALAH_STEPS.map(s => `<li>${s}</li>`).join("");
+
+    document.getElementById("prophets-list").innerHTML = PROPHET_LESSONS.map(p => `
+      <div class="accordion-item">
+        <button class="accordion-head"><span>${p.name}</span><span class="chev">⌄</span></button>
+        <div class="accordion-body"><p>${p.lesson}</p></div>
+      </div>`).join("");
+
+    document.getElementById("manners-list").innerHTML = MANNERS.map((m,i) => `
+      <li><span class="r-num">${i+1}</span><span>${m}</span></li>`).join("");
+
+    document.getElementById("ramadan-list").innerHTML = RAMADAN_FACTS.map((r,i) => `
+      <li><span class="r-num">${i+1}</span><span>${r}</span></li>`).join("");
+  });
+</script>
+<script src="js/learn.js"></script>
+</body>
+</html>
